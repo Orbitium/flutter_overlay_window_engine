@@ -1,0 +1,6 @@
+Requires:
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <service
+        android:name="me.orbitium.flutter_overlay_window_engine.service.application_overlay.OverlayService">
+    </service>
+
