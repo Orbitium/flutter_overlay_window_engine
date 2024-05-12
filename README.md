@@ -12,6 +12,9 @@ A Flutter package to create overlay windows at runtime on Android.
 - [Known issues](#known-issues)
 
 ## Showcase
+![Caller example](https://github.com/Orbitium/flutter_overlay_window_engine/blob/main/example/assets/Example1.png)
+![Eye care example](https://github.com/Orbitium/flutter_overlay_window_engine/blob/main/example/assets/Example2.png)
+![Floating dot example](https://github.com/Orbitium/flutter_overlay_window_engine/blob/main/example/assets/Example3.gif)
 
 ## Warning
 This package is still under development and might lead to crashes/memory leaks. Any kind of help is appreciated.
