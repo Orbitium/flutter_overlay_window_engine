@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter/services.dart';
 import 'package:flutter_overlay_window_engine/entities/overlay_window.dart';
 import 'package:flutter_overlay_window_engine/flutter_overlay_window_engine.dart';
 import 'package:flutter_overlay_window_engine_example/example_overlays/caller_example.dart';
@@ -49,9 +48,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   bool hasServiceStarted = false;
   bool hasWindowsInitialized = false;
-
-  // bool hasAccessibilityOverlayWindowActivated = false;
-  late final AppLifecycleListener _listener;
 
   @override
   void initState() {
@@ -263,7 +259,7 @@ class _MyAppState extends State<MyApp> {
 
   void showSnackBar(String text) {
     ScaffoldMessenger.of(context).showSnackBar(
-      new SnackBar(
+      SnackBar(
         content: Text(text),
       ),
     );

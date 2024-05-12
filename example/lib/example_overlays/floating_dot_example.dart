@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class FloatingDotExample extends StatelessWidget {
@@ -10,7 +8,7 @@ class FloatingDotExample extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: CustomPaint(
-        size: Size(125, 125),
+        size: const Size(125, 125),
         painter: CircleWithDotPainter(),
       ),
     );
@@ -33,7 +31,7 @@ class CircleWithDotPainter extends CustomPainter {
     final double centerX = size.width / 2;
     final double centerY = size.height / 2;
     final double radius = size.width / 2.25; // Adjust the radius as needed
-    final double dotRadius = 4.5;
+    const double dotRadius = 4.5;
 
     // Draw the circle
     canvas.drawCircle(Offset(centerX, centerY), radius, circlePaint);
