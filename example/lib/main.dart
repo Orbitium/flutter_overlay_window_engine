@@ -65,7 +65,7 @@ class _MyAppState extends State<MyApp> {
     OverlayWindow callerExample = OverlayWindow(
       windowID: "callerExample",
       entryPoint: "callerExample",
-      overlaySize: OverlaySize((screenSize.width * 0.9).toInt(), 350),
+      overlaySize: OverlaySize((screenSize.width * 0.9).toInt(), 400),
       initialPosition: OverlayPosition((screenSize.width * 0.05).toInt(), 100),
       isDraggable: false,
       isClickable: true,
