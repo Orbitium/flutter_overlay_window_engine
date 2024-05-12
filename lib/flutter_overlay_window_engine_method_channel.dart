@@ -9,16 +9,6 @@ class MethodChannelFlutterOverlayWindowEngine {
   /// The method channel used to interact with the native platform.
   static const MethodChannel _methodChannel = MethodChannel('flutter_overlay_window_engine/engine');
 
-  // TODO: Implement better error-handling, maybe using Either<Failure, Success>?
-  Future<String?> getPlatformVersion() async {
-    final version = await _methodChannel.invokeMethod<String>('getPlatformVersion');
-    return version;
-  }
-
-  Future<void> test(String id) {
-    return _methodChannel.invokeMethod("test", id);
-  }
-
   Future<void> initializeEngine() async {
     await _methodChannel.invokeMethod("initialize_engine");
   }

@@ -1,7 +1,6 @@
 package me.orbitium.flutter_overlay_window_engine.entities;
 
 import android.content.Context;
-import android.speech.tts.TextToSpeech;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -76,11 +75,7 @@ public class OverlayRenderer {
             return;
 
 //        engine.getLifecycleChannel().appIsDetached();
-        try {
-            engine.destroy();
-        } catch (Exception e) {
-            System.out.println("Engine destroy exception has occurred");
-        }
+        engine.destroy();
 
         FlutterEngineCache.getInstance().remove(engineID);
 

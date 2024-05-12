@@ -53,11 +53,12 @@ to AndroidManifest.xml.
 The engine requires an accessibility service to create/manage views. Add
 ```xml
 <service android:name="me.orbitium.flutter_overlay_window_engine.service.accessibility.AccessibilityOverlayService"
-android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
-android:exported="false">
-<intent-filter>
-<action android:name="android.accessibilityservice.AccessibilityService" />
-</intent-filter>
+    android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+    android:exported="false">
+    
+    <intent-filter>
+        <action android:name="android.accessibilityservice.AccessibilityService" />
+    </intent-filter>
 </service>
 ```
 to AndroidManifest.xml.
@@ -94,6 +95,8 @@ Deleting overlay windows will free allocated memory.
 - Overlay window events such as `onActivated()`, `onDeactivated()`, `onDragged()` etc.
 - Current position variable in overlay windows; currently, it's not possible to know the overlay window's location if it's draggable. Note: it's possible to get the current position of overlay windows on the Android side.
 - Service events such as `onServiceStarted()`, `onServiceStopped()` etc.
+- Foreground/Stick/Non-sticky services.
+- Notifications.
 - Better stabilization; currently, the engine can't handle heavy loads or wrong use cases.
 - Better error-handling. Currently, the engine does not respond as well as expected; you can't really know if the engine is doing its thing in the background.
 

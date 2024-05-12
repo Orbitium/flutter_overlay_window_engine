@@ -1,15 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_overlay_window_engine/entities/overlay_notification.dart';
 
-import '../flutter_overlay_window_engine_method_channel.dart';
-
-/*
-  Remove gravity ✔️
-  Change size -> OverlaySize ✔️
-  add useAccessibilityService (java side needs to be updated for this ? maybe)
-  create a stream for every overlaywindow to send events
- */
-
 class OverlayWindow {
   String windowID;
   String entryPoint;
@@ -33,27 +24,7 @@ class OverlayWindow {
     this.isClickable = true,
     this.isDraggable = false,
     this.isTransparent = false,
-  }) {
-    initializeEventChannel();
-  }
-
-  void initializeEventChannel() {
-    if (!isDraggable) return;
-
-    eventChannel!.setMethodCallHandler(_onMethodCall);
-    // eventChannel!.invokeMethod("test");
-    print('EventChannel has been created');
-  }
-
-  Future<dynamic> _onMethodCall(MethodCall call) async {
-    print("Event Received");
-    print("Event Received");
-    print("Event Received");
-    print("Event Received");
-    print("Event Received");
-    print("Event Received");
-    print("Event Received");
-  }
+  });
 
   // Method to serialize OverlayWindow object to JSON
   Map<String, dynamic> toJson() {

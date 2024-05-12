@@ -193,7 +193,6 @@ enum EngineMethod {
     ACTIVATE_OVERLAY_WINDOW("activate_overlay_window"),
     DISABLE_OVERLAY_WINDOW("disable_overlay_window"),
     MOVE_OVERLAY_WINDOW("move_overlay_window"),
-    TEST("test"),
     RESIZE_OVERLAY_WINDOW("resize_overlay_window");
 
     String methodID;

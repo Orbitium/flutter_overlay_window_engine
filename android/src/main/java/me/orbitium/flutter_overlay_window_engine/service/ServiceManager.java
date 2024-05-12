@@ -9,12 +9,6 @@ import me.orbitium.flutter_overlay_window_engine.service.application.Application
 
 public class ServiceManager {
 
-    /* TODO: Update new Service system to be compatible with new 2 service classes
-     * implement foreground service
-     * REMOVE STATIC INSTANCES FROM BOTH SUB-MANAGER SERVICE CLASSES
-     * THEY MUST BE *ONLY* ACCESSIBLE TRU THIS CLASS
-     */
-
     private static volatile ServiceManager instance;
     private final ApplicationOverlayServiceManager overlayManager;
     private final AccessibilityOverlayServiceManager accessibilityServiceManager;

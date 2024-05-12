@@ -12,8 +12,6 @@ import me.orbitium.flutter_overlay_window_engine.overlay.NotificationVisibility;
 import me.orbitium.flutter_overlay_window_engine.overlay.OverlayPosition;
 import me.orbitium.flutter_overlay_window_engine.overlay.OverlaySize;
 
-// TODO: Window events???? -> onActivate(), onDisable(), onDrag(), onTerminated() (when app loses required permissions)
-// TODO: Implement useAccessibilityService;
 public class OverlayWindow {
     private String engineID;
     private OverlayRenderer renderer;
