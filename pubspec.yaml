@@ -1,6 +1,6 @@
 name: flutter_overlay_window_engine
 description: "This package aims to allow developers to create multiple overlay windows using dart code & without needing to write android code."
-version: 0.0.1
+version: 0.1.0
 homepage:
 
 environment:
